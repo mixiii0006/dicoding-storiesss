@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#2a9d8f" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <title>Dicoding App</title>
+  </head>
+  <body>
+    <header>
+      <div class="main-header container">
+        <a
+          href="#main-content"
+          class="skip-to-content"
+          style="
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            z-index: 1000;
+            transition: top 0.3s ease;
+          "
+          onfocus="this.style.top='0';"
+          onblur="this.style.top='-40px';"
+          >Skip to content</a
+        >
+        <a class="brand-name" href="#/">Dicoding Stories</a>
+
+        <nav
+          id="navigation-drawer"
+          class="navigation-drawer"
+          aria-label="Primary navigation"
+        >
+          <ul id="nav-list" class="nav-list">
+            <li><a href="#/">Beranda</a></li>
+            <li><a href="#/about">About</a></li>
+            <li><a href="#/add-story">Add Story</a></li>
+            <li><a href="#/login">Login</a></li>
+            <li><a href="#/register">Register</a></li>
+          </ul>
+        </nav>
+
+        <button
+          id="drawer-button"
+          class="drawer-button"
+          aria-label="Toggle navigation menu"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content" class="main-content" role="main"></main>
+  </body>
+</html>
